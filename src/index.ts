@@ -48,4 +48,9 @@ app.post("/api/generate", async (req, res) => {
   }
 });
 
+
+app.get("/", (req, res) => {
+  res.send("AI Created Backend is Running")
+})
+
 app.listen(9000, () => console.log("🚀 Server running on http://localhost:9000"));
